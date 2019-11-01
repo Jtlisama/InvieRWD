@@ -1,0 +1,191 @@
+<!Doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Invie - tus mejores guitarras!!</title>
+       <meta name="viewport"    content="width=device-width">
+
+       <!--CDN de Hammer JS-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+        
+        <!--CDN de Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+
+        <!--CSS invie-->
+        <link rel="stylesheet" href="css/invie.css">
+
+        <!--Media Queries Consultando Pnatalla-->
+        <!--Aplicado del curso de responsive web desing-->
+        <!--Explicacon: usamos link para obtener el archivo que se ejecutara cuando el atributo se cumpla (media:"valoracumplir") max-width es el tamaño de pantalla en ancho es una propiedad css-->
+        
+       <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-queries.css">-->
+
+
+    </head>
+    <body>
+        
+        
+        <section id="portada" class="portada background" ><!--portada-->
+            <header id="header" class="header contenedor" ><!--header-->
+                <figure class="logotipo"><!--logotipo-->
+                    <img src="img/Invie.png" alt="Invie-Logotipo" width="186">
+                </figure> 
+                <span id="burguer-button" class="burguer-button icon-menu"></span>
+                <nav class="menu" id="menu"><!--menu-->
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#guitarras">Guitarras</a>
+                        </li>
+                        <li>
+                            <a href="precios.html">Precios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="contenedor">
+                <h1 class="titulo">Guitarras <span>invie</span>sibles</h1> <!--Titulo--> 
+                <h3 class="title-a">Se la estrella de rock que siempre quisiste sera</h3> <!--resumen-->
+                <a href="#guitarras" class="button">Conoce más</a> <!--boton-->
+            </div>
+
+        </section>
+        <section id="guitarras" class="guitarras contenedor"><!--guitarras-->
+            <h2>Nuestras guitarras</h2> <!--titulo-->
+            <article class="guitarra">
+                <img class="derecha" src="img/invie-acustica.png" alt="" width="350">
+                <div class="contenedor-guitarra-a">
+                    <h3 class="title-b">Invie Acústica</h3>
+                    <ol>
+                        <li>Estilo vintage</li>
+                        <li>Madera Pura</li>
+                        <li>Incluye estuche invisible de aluminio</li>
+                    </ol>
+                </div>
+            </article> <!--guitarra1-->
+            <article class="guitarra b">
+                <img class="izquierda" src="img/invie-classic.png" alt="" width="350">
+                <div class="contenedor-guitarra-b">
+                    <h3 class="title-b">Invie Classic</h3>
+                    <ol>
+                        <li>Estilo vintage</li>
+                        <li>Liviana</li>
+                        <li>Inicia tu camino como Rockstar</li>
+                    </ol>
+                </div>
+            </article> <!--guitarra2-->
+        </section>
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="contacto">
+                    <img src="img/invie-white.png" alt="Invie logotipo blanco">
+                    <div>
+                    <div>
+                        <a href="tel:+50487401515"><strong>Telefono</strong><span>78654543</span></a>
+                    </div>
+                    <div>
+                        <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+                    </div>
+                </div>
+                </div>
+                <form class="formulario">
+                    <div class="col1">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" required name="nombre">
+    
+                        <label for="email">E-mail:</label>
+                        <input type="email" required id="email" name="email">
+                        
+                        <div class="sexo">
+                            <label for="mujer">
+                                <input type="radio" id="mujer" name="sexo" value="Mujer"> Mujer
+                            </label>
+                            <label for="hombre">
+                                <input type="radio" id="hombre" name="sexo" value="Hombre"> Hombre
+                            </label>
+                        </div>
+                        <div class="intereses">
+                            <label for="cotizacion">
+                            <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion"> Cotizacion
+                            </label>
+                            <label for="reclamos">
+                            <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+                            </label>
+                            <label for="comentarios">
+                            <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+                            </label>
+                            <label for="otros">
+                            <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+                            </label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col2">
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="comentarios" id="comentario" cols="30" rows="5"></textarea>
+                        <input type="submit" value="Enviar" class="button">
+                    </div>
+                </form>
+            </div>
+        </footer>
+        
+        <script>
+        //Codigo Javascript
+
+        let consulta = window.matchMedia('(max-width:500px)');
+
+        let burguerButton = document.getElementById('burguer-button');
+
+        let menu = document.getElementById('menu');
+        function toggleMenu(){
+            menu.classList.toggle('active');
+        }
+
+        //Yo le invente estra funcion para esconder el boton de menu al estar mas de 500 px la pantalla pero despues aprendi que es mas codigo lo que escribi mejor en la clase burgerButton darle un display none y en la media querie de 500px darle el display inlien-block
+        // function esconderButton(){
+        //     burguerButton.classList.toggle('invisible');
+        // }
+      
+
+        consulta.addListener(mediaQuery);
+        function mediaQuery(){
+           
+            if (consulta.matches){
+                console.log('se cumple la condicion');
+                burguerButton.addEventListener('touchstart',toggleMenu); 
+                // burguerButton.classList.remove('invisible');
+                
+            }else{
+                console.log('no se cumplio la condicion');
+                burguerButton.removeEventListener('touchstart',toggleMenu);
+                // esconderButton();
+            
+        }
+            }
+        
+            mediaQuery();
+
+            /*Gestos Touch Mobile Hammer JS*/
+            function showMenu(){
+            menu.classList.add('active');
+            }
+            function hideMenu(){
+                menu.classList.remove('active');
+
+            }
+           
+            let body = document.body;
+            let gestos = new Hammer (body);
+            gestos.on('swipeleft',hideMenu);
+            gestos.on('swiperight', showMenu);
+            
+            
+            
+           
+      
+        </script>
+    </body>   
+</html>
