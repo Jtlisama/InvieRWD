@@ -1,0 +1,21 @@
+/*
+Este archivo modifica el color de fondo de index.html
+al llegar a tener un ancho de 800px max-width
+//Esta es la line de codigo html con el que esta ligada
+
+<link rel="stylesheet" media="(max-width: 800px)" href="css/media-queries.css">
+
+Pero no usaremos archivos css para cada media queries ya que eso es una peticion al servidor http request   y eso implica mucho trabajo y no es correcto para un sitio web.
+
+este solo fue un ejemplo pero el media queries lo haremos en el mismo archivo css de la pagina
+
+comentaremos la linea html que esta relacionada con este codigo para hacerno en el archivo css principal.
+
+*/
+
+
+
+body {
+    background: red;
+    border: 10px solid burlywood;
+}

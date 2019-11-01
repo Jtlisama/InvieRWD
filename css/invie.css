@@ -1,0 +1,632 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../img/fonts/icomoon.eot?f11b5j');
+    src:  url('../img/fonts/icomoon.eot?f11b5j#iefix') format('embedded-opentype'),
+      url('../img/fonts/icomoon.ttf?f11b5j') format('truetype'),
+      url('../img/fonts/icomoon.woff?f11b5j') format('woff'),
+      url('../img/fonts/icomoon.svg?f11b5j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-close:before {
+    content: "\ea0d";
+  }
+  
+
+.burguer-button {
+    width: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    height: 40px;
+    background: #395667;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 3;
+    display: none;
+
+}
+
+
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: inline-block;
+}
+
+
+
+
+
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Allerta', sans-serif;
+*/
+
+
+body {
+    font-family: 'Allerta', sans-serif;
+    margin: 0;
+}
+
+.background {
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+input, textarea {
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    background: #888a88b6;
+}
+
+.button {
+    border-radius: 10px;
+    border: none;
+    background: #fd324e;
+    color: #fff;
+    padding: 7px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    background: linear-gradient(to left, #fe344e,#ff7250);
+}
+
+.contenedor {
+    /*width: 800px;*//*eliminamos esta linea para remplantiarnos y asi hacer que el contenedor sea flexible al tamaño del dispositivo*/
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+
+}
+
+.titulo span {
+    text-decoration: underline;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+}
+
+.title-a {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.guitarra {
+    padding: 10px;
+    margin: 10px 10px 40px 10px;
+
+    /*overflow: hidden;*/
+    border: 1px solid #1F313C;
+    border-radius: 8px;
+}
+
+.guitarra.b {
+    height: 190px;
+}
+
+.guitarras {
+    font-family: 'Montserrat', sans-serif;
+    color: #1F313C;
+    margin-bottom: 60px;
+}
+
+.guitarras h2 {
+    font-size: 35px
+}
+
+.title-b {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.portada {
+
+    color: #fff;
+    padding: 20px;
+    height: 500px;
+
+}
+
+.portada button {
+    margin-bottom: 70px;
+}
+
+.menu {
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.logotipo {
+    margin-left: 0;
+    display: inline-block;
+}
+
+
+
+.derecha {
+    float: right;
+    position: relative;
+    top: -136px;
+}
+
+.izquierda {
+    float: left;
+    position: relative;
+    
+}
+
+.contenedor-guitarra-a {
+    padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+    margin-left: 370px;
+    position: relative;
+    bottom: 90px;
+}
+
+.header {
+    position: relative;
+}
+
+.footer {
+    background: #273b47;
+    padding: 50px 10px;
+}
+
+.contacto {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.contacto img {
+    display: block;
+   
+}
+
+.contacto strong {
+    display: block;
+}
+
+.contacto a {
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.formulario {
+    margin-left: 25px;
+    display: flex;
+    color: #fff;
+    
+     
+}
+
+.col1, .col2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.col1 {
+    margin-right: 15px;
+    
+}
+
+.col2 {
+    align-items: flex-start;
+    
+}
+
+.intereses label {
+    font-size: 13px;
+}
+
+.formulario label, .sexo, .intereses {
+    margin-bottom: 7px;
+}
+
+.sexo {
+    margin-top: 10px;
+}
+
+.col2 .button {
+    margin-top: 8px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background: #273b47;
+    color: #fff;
+    text-align: left;
+}
+
+th {
+    padding: 10px;
+}
+td {
+    padding: 20px;
+}
+
+table, td, th {
+    border: 1px solid #273b47;
+    border-collapse: collapse;
+}
+
+.tabla {
+    margin: 50px 0;
+}
+
+/*
+Clase 2.1
+Tipos y formas de agregar media queries  
+*/
+
+/*
+Este seria un media-queries interno en la hoja de estilo
+
+En esta hoja de Estilo vamos a colocar una media queries para modificar nuestro sitio 
+
+aqui se inicia con un @ arroba el nombre media  el tipo de aspecto que se aplicara screen pantalla and (condicion){reglas}
+*/
+
+/*Comentado Solo usado como ejemplo*/
+/* @media screen and (max-width: 800px){
+    
+    body{
+        background: #fd324e;
+        border: 15px solid lightgreen;
+    }
+} */
+
+
+
+
+
+/*//////////////////////////////////////////////////////*/
+
+/*
+Clase 2.2
+Adaptando nuestro proyecto para tablets
+*/
+/*
+Notas Interesantes
+CSS nunca usar un valor absoluto.
+aunque usamos medidas relativas
+*/
+
+
+/*Resetear el tamaño del contenedor que tiene elementos con medida absolutas la clase que se modifica es .contenedor */
+
+/*
+Comente esta media queri ya que es innecesaria solo fue para aprender aqui hay que remplantiarse mejor modificamos la regla original y usamos menos codigo eso es remplantiarse al aplicar rwsponsive web desing
+
+@media screen and (max-width:800px){
+    .contenedor {
+        /*estas lineas de codigo hacen que el maximo de ancho de los contenedores sea de 800 px asi sus elemento no seran mas ni los contenedores y el width en auto hace que los contenedores adopten el tamaño disponible   
+        width:auto;
+        max-width: 800px;
+    }
+} 
+*/
+
+/*Ir y modificar la clase .contenedor y aplicar un max-width 800px*/
+
+
+ 
+/*Inicio de Media Queries max-width: 800px*/
+@media screen and (max-width:800px){
+    body{
+        border: 8px solid #ff7250;
+    }/*Comentar esta regla css para que no se aplique solo es para uso guia*/
+
+    /*Estilos Aplicados a Portada*/
+    .titulo {
+        font-size: 45px;/*1 Modifica el tamaño del texto principal  a uno menor si esta en este tamaño de pantalla*/
+        
+        margin-top: 30px; /*3 Hacia mucho espacio entre el logo y el titulo asi lo reducimos*/
+    }
+    .title-a {
+        font-size: 18px;/*2 Modifca el tamaño*/   
+    }
+    .portada {
+        height: auto;/*4 queda mucho espacio entre el boton de la portada y la siguiente seccion por que tenia un alto absoluto*/
+    }
+    .portada .button{
+        margin-bottom: 30px;/*5 hace un espacio entre el boton de portada y la siguiente seccion ya que estaba muy corto despues de quitarle el alto absoluto que tenia pero no se aplicara hasta colocar el boton en display inline-block*/
+
+        display: inline-block;/*6 hace que el boton que esta en la portada tenga el margen que le estamos aplicando con el codigo de arriba ya que como es un elemento inline no tiene propiedades como margin con inline-block se comporta inline para que no ocupe todo el ancho que tiene disponible en pantalla y block para que todo las propiedades margin de un elemento bloque*/
+
+    }
+
+    /*Estilos Aplicados a Seccion Guitarras*/
+
+    .guitarras {
+        border: 5px green solid; 
+    }/*Comentar esta regla css para que no se aplique solo es para uso guia*/
+
+    .guitarras {
+        text-align: center;/* 1 alinea todos los texot dentro de esta seccion haci el centro segun el diseño establecido*/
+    }
+
+    .derecha, .izquierda{
+        float: none;/*2 le quitamos a los elementos img la propiedad float que se le aplica con su clase derecha o izquierda diciendole que no floten osea none. JT usamos una coma y hay dos clases porque asi se aplicar una misma regla a dos clases o mas separadas por coma y espacio*/
+
+        position: static;/*3 esta propieda quita la posicion relative que tieme los elementos que hacen que se comporte donde estan ya que usamos las propuedad top left right que solo se puede dandole una position relative o absolute o fixed pero como no la necesitamos le ponemos static ya que es la posicion inicial de todos los elementos html y estamos aprovechando la ventaja de aplicarselo a dos clases distintas*/
+    }
+    .title-b {
+        margin: 0;/*4 le quito el margin que tiene los elementos de titulo*/ 
+    }
+
+    .guitarras li {
+        list-style: none;/*5 quito las numeracion de listas de los li segun el nuevo diseño*/
+    }
+
+    .contenedor-guitarra-a {
+        padding: 0;/*6 le quito el padding al contenedor de el texto en guitarra b*/
+    }
+    .guitarra.b {
+        height: auto;/*7 le quite el alto absoluto que tiene este contenedor para que sus elementos interiores no se desborden con ese le digo toma el alto de tu contenido*/
+    }
+    .contenedor-guitarra-b {
+        position: static;/*8 se posiciona donde queremos por que tiene una posicion relative a su elmento padre pero ya no lo necesita */
+        margin: 0;/*9 le quitamos los margenes ya no los queremos*/
+    }
+
+    .guitarra ol {
+        padding: 0;
+    }
+
+
+}/*Fin del Media Queries max-width:800px*/
+
+
+/*////////////////////////////////////////////////*/
+
+/*
+Clase 2.3
+Adaptando nuestro proyecto para dispositivo moviles
+
+*/
+
+/*
+Notas Interesantes
+Entre una medida y otra el RWD deben seguir una flujo que se vaya modifiando hasta llegar al final querido.
+*/
+
+@media screen and (max-width: 767px){
+    body{
+        border: 5px ridge slateblue; 
+    }
+
+  
+    .footer .contenedor{
+        display: block;/*1 le quito el display flex para que darle block y tome todo el espacio posicionando los elementos uno debajo del otro*/
+    }
+    .contacto{
+        display: block;
+        margin: 0 auto; 
+        width: 300px;            
+    }
+    
+    .contacto div{
+        display: inline-block;
+        width: auto;
+        margin: 5px 0;
+    }
+    .formulario {
+     margin: 0 auto;
+     display: block;  
+     width: 300px; 
+    }
+    
+    .col1 {
+        margin: 0;
+    }
+
+    .intereses label {
+        display: block;
+        font-size: 15px;
+    }
+
+    input[type="text"], input[type="email"]{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    input[type="radio"],input[type="checkbox"]{
+        zoom: 1.4;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 650px){
+    body{
+        border: 8px solid #1F313C;/*Comentar esta regla css para que no se aplique solo es para uso guia.*/
+    }
+  
+    .header{
+        text-align: center;/*Esta linea hace que todo sus hijo hereden*/
+
+    }
+    .logotipo{
+        margin: 0;/*le quito los margenes para que queden mejor centrados.*/
+    }
+
+    .menu {
+        position: static;/*1 le quito el position absolute para que tome todo el espacio disponible ya que estara abajo del logo*/
+        display: block; /* Para que se baje de la par del logo y tome todo el espacio disponible*/
+        
+        /*text-align: center;/*centra los elementos texto se lo quito ya que hago que lo herede del padre header*/
+
+    }
+
+    .menu ul {
+        padding: 0;/*2 le quito el padding para que se centre mejor ya no lo necesito*/
+    }
+
+    .menu li:first-child() {
+        margin: 0;/*3 le quito los margenes ya no los ocupo centrase mejor*/
+    }
+    
+    .guitarras ol {
+        padding-left: 0;/*le quitos los padding izquierdos a los elementos ol que estan dentro de la seccion guitarras asi estaran mas centrado*/
+    }
+
+    
+
+}/*Fin del Media Queries max-width: 650px*/
+
+
+/*/////////////////////////////////*/
+
+
+@media screen and (max-width: 500px){
+
+    body {
+        border: 5px solid goldenrod;
+    }
+    /*Estilos Css aplicados a la Portada*/
+
+    /*Estilos Aplicados para hacer un icon para el menu*/
+
+    .burguer-button{
+        display: inline-block;
+    }
+    .menu {
+        background: rgba(253, 50, 78,.8);
+        position: fixed;/*lo Cambie de absolute a fiex para el modo mobile el menu nos siga y el boton amburguesa igual le puse fixed*/
+        
+        top: 0;
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        left: -100%;
+        transition: .3s;
+    }
+    .menu ul {
+        flex: 1;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    .portada .contenedor {
+        position: static;
+    }
+
+    .menu li {
+        display: block;/*1 quito el display inline-block para que se posicionen uno abajo del otro ya que con display block toman todo el espacio disponible.*/
+
+        margin: 0; /*2 le quitamos los margin para que se centren mejor*/
+        
+        padding: 8px 0px;/*3 le damos un padding para que alla mas espacio entre los elemento li asi lo requiere nuestro diseño*/
+
+        border-bottom: 1px solid white;/*4 le doy un border a los elementos li solo en la parte inferior osea abajo asi lo requiere nuestro diseño*/
+    }
+
+    .menu li:first-child{
+        border-top: 1px solid white;/*5 le doy un border top solo al primer elemento li ya que asi lo requiere nuestro diseño*/
+    }
+
+    .portada {
+        text-align: center;/*6 hago que todos los elementos se centren aunque algunos ya estan centrados por reglas anteriores */
+    }
+    .titulo {
+        font-size: 30px;/*7 hago que el titulo sea mas pequeño asi lo requiere el diseño*/
+    }
+
+    .title-a {
+        font-size: 16px;/*8 hago que el subtitulo sea mas pequeño asi lo requiere el diseño*/
+        margin-top: 5px;/*Este estilo lo modifique viendo la pagina en el telefono usando prepos me di cuenta de lo muy pecado que staban*/
+    }
+    /*FIN estilos a la Portada*/
+
+    /*Estilos Css aplicados a la Guitarras*/
+
+    .guitarra img {
+        width: 200px;/*8 hago que las imagenes sean mas pequeña asi lo requiere el diseño*/
+    }
+    .title-b {
+        font-size: 30px;
+
+    }
+    /*Este estilo lo modifique provando la pagina en el telefono con prepos me di cuenta de lo muy grande que se miraba*/
+    .guitarras h2{
+        font-size: 30px;
+    }
+}
+
